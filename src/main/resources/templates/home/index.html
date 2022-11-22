@@ -1,0 +1,54 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPETITE</title>
+
+    </head>
+
+<body>
+    <nav>
+        <header>
+            <li>
+                <a href="/client/new/" class="nav-link">Create Client</a>
+            </li>
+            <li>
+                <a href="/food/new/" class="nav-link">Create Food</a>
+            </li>
+        </header>
+    </nav>
+
+    <div class="container">
+        <h4>Current Clients</h4>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Payment</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr th:each="client: ${clients}">
+                    <th th:text="${client.firstName}"></th>
+                    <th th:text="${client.lastName}"></th>
+                    <th th:text="${client.email}"></th>
+                    <th th:text="${client.phone}"></th>
+                    <th th:text="${client.address}"></th>
+                    <th th:text="${client.methodOfPayment}"></th>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
