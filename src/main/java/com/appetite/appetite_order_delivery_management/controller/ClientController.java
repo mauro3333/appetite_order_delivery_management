@@ -25,12 +25,12 @@ public class ClientController {
     @GetMapping("/new")
     public String displayClientForm(Model model) {
         model.addAttribute("client", new Client());
-        return "client/new-client";
+        return "register/register";
     }
 
     @PostMapping("/save")
     public String createClient(Client client) {
         clientRepository.save(client);
-        return "redirect:/client/new";
+        return "redirect:/register/new";
     }
 }
