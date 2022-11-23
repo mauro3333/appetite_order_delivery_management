@@ -279,6 +279,10 @@ button {
   font-size: 24px;
   font-weight: 600;
 }
+
+.imagen-icon:hover {
+  transform: rotate(-4deg) scale(1.2);
+}
 .info {
   position: relative;
   padding: 20px;
