@@ -1,10 +1,8 @@
-package com.appetite.appetite_order_delivery_management.dao;
+// package com.appetite.appetite_order_delivery_management.dao;
 
+// public class iOrderRepository {
 
-public class iOrderRepository {
-    
+// @Override
+// public List<Food> findAll();
 
-    @Override
-    public List<Food> findAll();
-
-}
+// }
